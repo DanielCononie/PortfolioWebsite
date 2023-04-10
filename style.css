@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to right, rgb(232, 158, 54), rgb(254, 216, 145), orange);
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.text-fields {
+    margin: 8px;
+    height: 40px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.button--container {
+    display: flex;
+    justify-content: center;
+}
+
+.textfield-buttons {
+    height: 40px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 5px;
+    background: white;
+    font-weight: bold;
+}
+
+.textfield-buttons:hover {
+    background-color: navy;
+    color: white;
+}
+
+.dash--container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.dash--container > div {
+    padding: 1em;
+    border: 3px solid black;
+    border-radius: 10%;
+
+}
+
+.dash--container > div:nth-child(odd) {
+    padding: 1em;
+}
+
+.div--1 {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: lightblue;
+}
+
+.div--2 {
+    grid-row: 1/5;
+    background-color: lightblue;
+}
+
+.div--3 {
+    grid-column: 1/3;
+    grid-row: 3/6;
+    background-color: lightblue;
+
+}
+
+.div--4 {
+    background-color: lightblue;
+}
+
+.div--5 {
+    grid-column: 1/4;
+    background-color: lightblue;
+}
+
+.div--4 > p:nth-child(odd) {
+    font-weight: bold;
+}
+
+
+
+
+
+.skills--list > li {
+    padding: 5px;
+}
